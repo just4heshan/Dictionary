@@ -45,15 +45,15 @@ l1.grid(row=0, column=0)
 l2 = Label(window, text='Type the word in following Search bar: ', font='Helvetica 12 bold', fg='#2F4F4F' )
 l2.grid(row=1, column=0)
 
-b1 = Button(window, text='Translate', command=dictionary, font='Helvetica 20 bold', bg='#76EEC6', fg='#2F4F4F')
-b1.grid(row=1, column=2, columnspan=5)
+t1 = Text(window, height=20, width=50, font='Helvetica 20 bold')
+t1.grid(row=2, column=0, rowspan=2, pady=20, padx=100)
 
 word = StringVar()
-e1 = Entry(window, textvariable=word)
-e1.grid(row=1, column=1)
+e1 = Entry(window, textvariable=word, font='Helvetica 40 bold')
+e1.grid(row=2, column=3, pady=20, padx=100)
 
-t1=Text(window, height=20, width=80)
-t1.grid(row=2, column=0)
+b1 = Button(window, text='Translate', command=dictionary, font='Helvetica 20 bold', bg='#76EEC6', fg='#2F4F4F', width=30, height=2)
+b1.grid(row=3, column=3, columnspan=2)
 
 window.mainloop()
 
