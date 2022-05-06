@@ -3,7 +3,7 @@ from tkinter import *
 import json
 from difflib import get_close_matches
 
-data = json.load(open("Dictionary/data.json", "r"))
+data = json.load(open("data.json", "r"))
 
 def dictionary():
     if word.get() in data  :
